@@ -10,6 +10,7 @@ const fallbackAuthHelper = require("./fallbackAuthHelper");
 const sso = require("office-addin-sso");
 let retryGetAccessToken = 0;
 
+
 export async function getGraphData() {
   try {
     let bootstrapToken = await OfficeRuntime.auth.getAccessToken({ allowSignInPrompt: true });
